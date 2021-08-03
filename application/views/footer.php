@@ -75,7 +75,7 @@ buildMap(<?php echo $latitude; ?>,<?php echo $longitude; ?>);
 
 	var times = prayTimes.getTimes(date, [<?php echo $latitude; ?>,<?php echo $longitude; ?>], 1);
 	var list = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha', 'Midnight'];
-	var list_ar = ['الفجر', 'الشروق', 'الظهر', 'العصر', 'المغرب', 'العشاء', 'الثلث الأخير'];
+	var list_ar = ['الفجر', 'الشروق', 'الظهر', 'العصر', 'المغرب', 'العشاء', 'منتصف الليل'];
 
 	var html = '<table class="table table-striped mt-5">';
 	html += '<tr><th colspan="3">مواقيت الصلاة ليوم '+ date.toLocaleDateString()+ '  <?php echo $name_ar; ?></th></tr>';
@@ -131,7 +131,7 @@ buildMap(<?php echo $latitude; ?>,<?php echo $longitude; ?>);
 	  function calculateTime(date) {
 		  var times = prayTimes.getTimes(date, [<?php echo $latitude; ?>,<?php echo $longitude; ?>], 1);
 	var list = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha', 'Midnight'];
-	var list_ar = ['الفجر', 'الشروق', 'الظهر', 'العصر', 'المغرب', 'العشاء', 'الثلث الأخير'];
+	var list_ar = ['الفجر', 'الشروق', 'الظهر', 'العصر', 'المغرب', 'العشاء', 'منتصف الليل'];
 
 	var html = '<table class="table table-striped mt-5">';
 	html += '<tr><th colspan="2">مواقيت الصلاة ليوم '+ date.toLocaleDateString()+ ' <?php echo $name_ar; ?></th></tr>';
