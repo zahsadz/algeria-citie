@@ -5,23 +5,23 @@
  - واجهة تدعم الموبايل وجميع القياسات الأخري
  - عرض أوقات الصلاة و المكان علي الخريطة 
  - تنصيب سهل 
- - يمنكك أن تختار بين  
+ - يمنكك أن تختار بين  sqlite او mysql
  
-# application/config   ملف   -- config.php
+- application/config   ملف   -- config.php
 ```
 $config['base_url'] = 'http://algeria-citie.me/';
 
 ```
 
 # الإدارة
-
+```
 - http://algeria-citie.me/admin
 
 البريد الإلكتروني admin@admin.cc
 
 كلمة السر 123456
-
-# application/config    --  ملف database.php
+```
+- application/config    --  ملف database.php
 
 # mysql
 ```
