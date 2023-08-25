@@ -31,12 +31,11 @@ $config['base_url'] = 'http://algeria-citie.me/';
 ```
 
 ```
-	//'hostname' => 'localhost',
+	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '12345678',
 	'database' => 'algeria',
-	'dbdriver' => 'pdo',
-	//'dbdriver' => 'mysqli',
+	'dbdriver' => 'mysqli',
 	
 ```
 
@@ -44,11 +43,10 @@ $config['base_url'] = 'http://algeria-citie.me/';
 
 ```
 	'hostname' => 'sqlite:' . APPPATH . 'db/dz_salat.sqlite3',
-	//'hostname' => 'localhost',
 	'username' => '',
 	'password' => '',
 	'database' => '',
 	'dbdriver' => 'pdo',
-	//'dbdriver' => 'mysqli',
+
 	
 ```
