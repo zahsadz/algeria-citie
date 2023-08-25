@@ -50,3 +50,27 @@ $config['base_url'] = 'http://algeria-citie.me/';
 
 	
 ```
+# .htaccess
+```
+<IfModule mod_rewrite.c>
+#RewriteEngine On
+#Options All -Indexes
+#Options +FollowSymlinks
+#RewriteBase /
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php/$1 [L]
+
+#DirectoryIndex index.php
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|robots\.txt)
+RewriteRule ^(.*)$ index.php?/$1 [L]
+</IfModule>
+
+
+####Charset
+AddDefaultCharset utf-8
+```
